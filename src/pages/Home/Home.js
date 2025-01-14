@@ -11,8 +11,6 @@ const Home = () => {
             <Introduction></Introduction>
             <InforMySelf></InforMySelf>
             <ProjectSelf></ProjectSelf>
-            {/* <MilkTea></MilkTea>
-            <Map></Map> */}
         </>
     );
 };
