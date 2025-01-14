@@ -1,0 +1,152 @@
+.s-InforMySelf {
+    padding: $fs-52 0;
+    position: relative;
+    &_background {
+        position: absolute;
+        top: 7%;
+        right: 17%;
+    }
+    &_infor {
+        &_child {
+            position: absolute;
+            top: 20%;
+            right: 8%;
+            animation: skill 5s infinite;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            h4 {
+                background-color: $white-color;
+                padding: $fs-8;
+                display: inline;
+                border-radius: 50px;
+                font-size: $fs-14;
+                color: #101dfd;
+                i {
+                    color: #101dfd;
+                    margin-right: 5px;
+                }
+            }
+            &:nth-child(2) {
+                top: 40%;
+                left: 20%;
+                animation: skill2 5s infinite !important;
+            }
+            &:nth-child(3) {
+                top: 80%;
+                right: 25%;
+                animation: skill3 5s infinite !important;
+            }
+            &:nth-child(4) {
+                top: 70%;
+                left: 10%;
+                animation: skill4 5s infinite !important;
+            }
+            &:nth-child(5) {
+                top: 50%;
+                right: 5%;
+                animation: skill5 5s infinite !important;
+            }
+            &:nth-child(6) {
+                top: 10%;
+                left: 12%;
+                animation: skill6 5s infinite !important;
+            }
+        }
+    }
+    &_img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            background: linear-gradient(90deg, #101dfd, #04a1ff);
+            border-radius: 170px;
+            content: "";
+            width: 365px;
+            height: 565px;
+            position: absolute;
+            z-index: 1;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img {
+            width: 350px;
+            height: 550px;
+            border-radius: 170px;
+            position: relative;
+            margin-top: 46px;
+            z-index: 2;
+        }
+    }
+}
+
+@keyframes skill {
+    0% {
+        top: 15%;
+    }
+    50% {
+        top: 18%;
+    }
+    100% {
+        top: 15%;
+    }
+}
+
+@keyframes skill2 {
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 45%;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+@keyframes skill3 {
+    0% {
+        top: 80%;
+    }
+    50% {
+        top: 85%;
+    }
+    100% {
+        top: 80%;
+    }
+}
+
+@keyframes skill4 {
+    0% {
+        top: 70%;
+    }
+    50% {
+        top: 75%;
+    }
+    100% {
+        top: 70%;
+    }
+}
+@keyframes skill5 {
+    0% {
+        top: 50%;
+    }
+    50% {
+        top: 55%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+@keyframes skill6 {
+    0% {
+        top: 10%;
+    }
+    50% {
+        top: 15%;
+    }
+    100% {
+        top: 10%;
+    }
+}

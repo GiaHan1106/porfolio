@@ -1,0 +1,55 @@
+.c-headline {
+    display: flex;
+    justify-content: center;
+    h2 {
+        position: relative;
+        border: 1px solid #eee;
+        font-size: $fs-16;
+        color: $white-color;
+        padding: $fs-8 $fs-20;
+        border-radius: 50px;
+        display: inline-block;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        i {
+            margin-right: $fs-8;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            top: -36px;
+            left: -60px;
+            transform: rotate(19deg);
+            padding: 0.55rem;
+            background: linear-gradient(90deg, rgba(16, 29, 253, 0.1490196078), #04a1ff);
+            z-index: -1;
+            transition: top 0.5s ease;
+            animation: headline 1s infinite;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: $fs-12 0;
+        margin-top: 0;
+        h2 {
+            font-size: $fs-28;
+            &::after {
+                width: 10%;
+                height: 5px;
+            }
+        }
+    }
+}
+@keyframes headline {
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: 120px;
+    }
+}
