@@ -1,9 +1,9 @@
 .s-ProjectSelf {
-    margin-top: $fs-52;
+    margin: $fs-52 0;
 
     &_card {
         position: relative;
-        width: 630px;
+        width: 300px;
         height: 400px;
         overflow: hidden;
         border: 1px solid #ccc;
@@ -16,13 +16,7 @@
             height: auto;
             top: 0;
             left: 0;
-            transition: transform 1s ease-in-out; /* Đảm bảo ảnh cuộn mượt mà khi hover mất */
-        }
-
-        &:hover {
-            img {
-                animation: scrollImage 10s ease-in-out infinite; /* Chạy animation khi hover */
-            }
+            animation: scrollImage 40s ease-in-out infinite;
         }
 
         &__img-container {
@@ -30,6 +24,7 @@
             height: 100%;
             overflow: hidden;
             cursor: pointer;
+
             &::before {
                 content: "";
                 position: absolute;
@@ -47,7 +42,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
     }
     100% {
         transform: translateY(0);

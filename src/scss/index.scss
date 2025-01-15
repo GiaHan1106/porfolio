@@ -5,14 +5,10 @@
 @import "../component/Header/Header";
 @import "../component/Headline/Headline";
 @import "../component/Footer/Footer";
-@import "../component/ButtonComponent/ButtonComponent";
+@import "../component/ButtonPrimary/ButtonPrimary";
+@import "../component/ButtonSecondary/ButtonSecondary";
 
 @import "../pages/Home/Introduction/Introduction";
 @import "../pages/Home/InforMySelf/InforMySelf";
 @import "../pages/Home/ProjectSelf/ProjectSelf";
-
-@import "../pages/About/About";
-@import "../pages/Contact/Contact";
-@import "../pages/Franchise/Franchise";
-@import "../pages/Recruitment/Recruitment";
-@import "../pages/OrderProduct/OrderProduct";
+@import "../pages/Home/Skill/Skill";

@@ -10,7 +10,7 @@ import project5 from "../../../assets/project/project5.png";
 import project6 from "../../../assets/project/project6.png";
 import project7 from "../../../assets/project/project7.png";
 import project8 from "../../../assets/project/project8.png";
-import ButtonComponent from "../../../component/ButtonComponent/ButtonComponent";
+import ButtonPrimary from "../../../component/ButtonPrimary/ButtonPrimary";
 
 const ProjectSelf = () => {
     const [showMore, setShowMore] = useState(false);
@@ -65,7 +65,7 @@ const ProjectSelf = () => {
                 <HeadLine headline={"My Project"}></HeadLine>
                 <Row>
                     {displayedProjects.map((item) => (
-                        <Col md={12} lg={6} key={item.id}>
+                        <Col md={12} lg={3} key={item.id}>
                             <div className="s-ProjectSelf_card">
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                                     <div className="s-ProjectSelf_card__img-container">
@@ -76,7 +76,7 @@ const ProjectSelf = () => {
                         </Col>
                     ))}
                 </Row>
-                {!showMore && <ButtonComponent onClick={() => setShowMore(true)} buttonComponent={"Show More"} />}
+                <ButtonPrimary onClick={() => setShowMore(!showMore)} ButtonPrimary={showMore ? "Collapse" : "Show More"} />
             </Container>
         </div>
     );

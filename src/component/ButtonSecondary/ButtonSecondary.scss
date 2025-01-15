@@ -1,0 +1,52 @@
+.c-ButtonSecondary {
+    display: flex;
+    margin-top: $fs-32;
+    h4 {
+        position: relative;
+        font-size: $fs-20;
+        color: $third-color;
+        padding: $fs-12 $fs-36;
+        border-radius: 50px;
+        border: 1px solid $third-color;
+        display: inline-block;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        &:hover {
+            color: white;
+            transition-delay: 0.2s;
+            &::before {
+                bottom: -140%;
+                left: -100%;
+            }
+            &::after {
+                top: -100px;
+                right: -97%;
+            }
+        }
+        &::before {
+            content: "";
+            z-index: -1;
+            background: linear-gradient(90deg, #101dfd, #04a1ff) !important;
+            bottom: 11%;
+            left: -133%;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+        }
+        &::after {
+            content: "";
+            z-index: -1;
+            background: linear-gradient(90deg, #04a1ff, #101dfd) !important;
+            top: 0;
+            right: -135%;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+        }
+    }
+}

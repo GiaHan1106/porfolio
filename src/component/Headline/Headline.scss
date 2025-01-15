@@ -1,12 +1,13 @@
 .c-headline {
     display: flex;
     justify-content: center;
+    margin-bottom: $fs-40;
     h2 {
         position: relative;
         border: 1px solid #eee;
-        font-size: $fs-16;
+        font-size: $fs-20;
         color: $white-color;
-        padding: $fs-8 $fs-20;
+        padding: $fs-8 $fs-32;
         border-radius: 50px;
         display: inline-block;
         cursor: pointer;

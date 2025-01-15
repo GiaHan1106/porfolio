@@ -1,0 +1,27 @@
+.s-skill {
+    margin: $fs-32 0;
+    &_card {
+        display: flex;
+        align-items: center;
+        border: 0.5px solid #eeeeee82;
+        box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+        padding: $fs-14 $fs-32;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: $fs-40;
+        &:hover {
+            border: 0.5px solid rgba(234, 234, 255, 0.35);
+            box-shadow: rgba(8, 0, 255, 0.35) 0px 5px 15px;
+        }
+        img {
+            width: 60px;
+            height: 55px;
+        }
+        h5 {
+            color: $white-color;
+            font-size: $fs-16;
+            margin-left: $fs-20;
+        }
+    }
+}
