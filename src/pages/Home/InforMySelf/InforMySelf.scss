@@ -79,6 +79,53 @@
             z-index: 2;
         }
     }
+    @media (max-width: 991px) {
+        &_img {
+            img {
+                width: 250px;
+                height: 350px;
+            }
+            &::before {
+                width: 260px;
+                height: 360px;
+                top: 56%;
+            }
+        }
+        &_background {
+            top: 14%;
+            right: 5%;
+            width: 90%;
+        }
+        &_infor {
+            &_child {
+                &:nth-child(2) {
+                    top: 40%;
+                    left: 20%;
+                    animation: skill2 5s infinite !important;
+                }
+                &:nth-child(3) {
+                    top: 80%;
+                    right: 25%;
+                    animation: skill3 5s infinite !important;
+                }
+                &:nth-child(4) {
+                    top: 70%;
+                    left: 10%;
+                    animation: skill4 5s infinite !important;
+                }
+                &:nth-child(5) {
+                    top: 50%;
+                    right: 5%;
+                    animation: skill5 5s infinite !important;
+                }
+                &:nth-child(6) {
+                    top: 10%;
+                    left: 12%;
+                    animation: skill6 5s infinite !important;
+                }
+            }
+        }
+    }
 }
 
 @keyframes skill {

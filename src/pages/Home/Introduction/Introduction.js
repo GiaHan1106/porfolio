@@ -8,7 +8,7 @@ const Introduction = () => {
         <div className="s-Introduction">
             <Container>
                 <Row>
-                    <Col md={4}>
+                    <Col md={6} lg={4}>
                         <div className="s-Introduction_left">
                             <h1>HELLO !!</h1>
                             <h2>
@@ -26,7 +26,7 @@ const Introduction = () => {
                             <ButtonSecondary ButtonSecondary={"Contact me"} />
                         </div>
                     </Col>
-                    <Col md={8}>
+                    <Col md={6} lg={8}>
                         <div className="s-Introduction_right">
                             <h4>Introduce ?</h4>
                             <p>I'm Han , a Front End Developer</p>
@@ -38,7 +38,7 @@ const Introduction = () => {
                             </ul>
                             <div className="s-Introduction_infor">
                                 <Row>
-                                    <Col md={6}>
+                                    <Col xs={6}>
                                         <div className="s-Introduction_infor_child">
                                             <h5>
                                                 <span>Name:</span>
@@ -49,7 +49,7 @@ const Introduction = () => {
                                             </p>
                                         </div>
                                     </Col>
-                                    <Col md={6}>
+                                    <Col xs={6}>
                                         <div className="s-Introduction_infor_child">
                                             <h5>
                                                 <span>Phone:</span> (84+) 974200611
