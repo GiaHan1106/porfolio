@@ -8,7 +8,7 @@ import img4 from "../../../assets/skill/nodejs.png";
 import img5 from "../../../assets/skill/css.png";
 import img6 from "../../../assets/skill/sass.png";
 import img7 from "../../../assets/skill/React.png";
-import img8 from "../../../assets/skill/bootstrap-logo.svg";
+import img8 from "../../../assets/skill/bootstrap.svg";
 import img9 from "../../../assets/skill/docker.webp";
 import img10 from "../../../assets/skill/restfull.png";
 import img11 from "../../../assets/skill/sql.png";
