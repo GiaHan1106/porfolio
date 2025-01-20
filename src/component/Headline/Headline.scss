@@ -27,10 +27,10 @@
             left: -60px;
             transform: rotate(19deg);
             padding: 0.55rem;
-            background: linear-gradient(90deg, rgba(16, 29, 253, 0.1490196078), #04a1ff);
+            background: linear-gradient(90deg, rgba(16, 29, 253, 0.1490196078), #04a3ffbc);
             z-index: -1;
             transition: top 0.5s ease;
-            animation: headline 1s infinite;
+            animation: headline 2s infinite;
         }
     }
 
@@ -51,6 +51,6 @@
         left: -60px;
     }
     100% {
-        left: 120px;
+        left: 190px;
     }
 }
