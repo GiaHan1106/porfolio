@@ -84,7 +84,7 @@ const Skill = () => {
                 <HeadLine headline={"Skill"} />
                 <Row>
                     {listImg.map((item) => (
-                        <Col md={4} key={item.id}>
+                        <Col xs={6} md={4} key={item.id}>
                             <div className="s-skill_card">
                                 <img src={item.image} alt="" />
                                 <h5>{item.text}</h5>

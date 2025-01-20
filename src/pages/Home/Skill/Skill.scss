@@ -10,6 +10,7 @@
         cursor: pointer;
         transition: 0.5s;
         margin-bottom: $fs-40;
+
         &:hover {
             border: 0.5px solid rgba(234, 234, 255, 0.35);
             box-shadow: rgba(8, 0, 255, 0.35) 0px 5px 15px;
@@ -22,6 +23,18 @@
             color: $white-color;
             font-size: $fs-16;
             margin-left: $fs-20;
+        }
+    }
+    @media (max-width: 767px) {
+        &_card {
+            padding: $fs-8 $fs-20;
+            h5 {
+                font-size: $fs-14;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

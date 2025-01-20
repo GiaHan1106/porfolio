@@ -9,9 +9,7 @@
     &_infor {
         &_child {
             position: absolute;
-            top: 20%;
-            right: 8%;
-            animation: skill 5s infinite;
+
             animation-duration: 5s;
             animation-iteration-count: infinite;
             h4 {
@@ -25,6 +23,11 @@
                     color: #101dfd;
                     margin-right: 5px;
                 }
+            }
+            &:nth-child(1) {
+                top: 20%;
+                right: 8%;
+                animation: skill 5s infinite;
             }
             &:nth-child(2) {
                 top: 40%;
@@ -82,12 +85,13 @@
     @media (max-width: 991px) {
         &_img {
             img {
-                width: 250px;
-                height: 350px;
+                width: 200px;
+                height: 300px;
+                margin-top: 40px;
             }
             &::before {
-                width: 260px;
-                height: 360px;
+                width: 210px;
+                height: 310px;
                 top: 56%;
             }
         }
@@ -96,11 +100,17 @@
             right: 5%;
             width: 90%;
         }
+    }
+    @media (max-width: 767px) {
         &_infor {
             &_child {
+                h4 {
+                    font-size: $fs-8;
+                }
+
                 &:nth-child(2) {
                     top: 40%;
-                    left: 20%;
+                    left: 4%;
                     animation: skill2 5s infinite !important;
                 }
                 &:nth-child(3) {
@@ -122,6 +132,55 @@
                     top: 10%;
                     left: 12%;
                     animation: skill6 5s infinite !important;
+                }
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        &_img {
+            img {
+                width: 120px;
+                height: 180px;
+                margin-top: 40px;
+            }
+            &::before {
+                width: 130px;
+                height: 190px;
+                top: 59%;
+            }
+        }
+        &_background {
+            top: 21%;
+            right: 2%;
+            width: 95%;
+        }
+        &_infor {
+            &_child {
+                h4 {
+                    font-size: $fs-7;
+                }
+                &:nth-child(1) {
+                    top: 14% !important;
+                    right: 4%;
+                }
+                &:nth-child(2) {
+                    top: 70% !important;
+                    left: 4%;
+                }
+                &:nth-child(3) {
+                    top: 57% !important;
+                    right: 7%;
+                }
+                &:nth-child(4) {
+                    top: 90% !important;
+                    left: 39%;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }
+                &:nth-child(6) {
+                    top: 25% !important;
+                    left: 3%;
                 }
             }
         }

@@ -65,7 +65,7 @@ const ProjectSelf = () => {
                 <HeadLine headline={"My Project"}></HeadLine>
                 <Row>
                     {displayedProjects.map((item) => (
-                        <Col md={12} lg={3} key={item.id}>
+                        <Col xs={6} lg={3} key={item.id}>
                             <div className="s-ProjectSelf_card">
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                                     <div className="s-ProjectSelf_card__img-container">

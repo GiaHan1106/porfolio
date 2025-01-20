@@ -1,5 +1,4 @@
 .c-ButtonSecondary {
-    display: flex;
     margin-top: $fs-32;
     h4 {
         position: relative;
@@ -50,6 +49,31 @@
         }
         @media (max-width: 991px) {
             margin: 0 auto;
+            font-size: $fs-16;
+            &:hover {
+                color: white;
+                transition-delay: 0.2s;
+                &::before {
+                    bottom: -90%;
+                    left: -38%;
+                }
+                &::after {
+                    top: -80%;
+                    right: -46%;
+                }
+            }
+            &::before {
+                bottom: 60%;
+                left: -81%;
+                width: 150px;
+                height: 150px;
+            }
+            &::after {
+                top: 0;
+                right: -96%;
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 }
